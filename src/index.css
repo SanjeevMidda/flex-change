@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 1s;
+  cursor: none;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: rgba(128, 128, 128, 0.449);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container :nth-child(1) {
+  animation: move 1s linear infinite both;
+}
+
+.container :nth-child(2) {
+  animation: move 1.5s linear infinite both;
+}
+
+.container :nth-child(3) {
+  animation: move 2s linear infinite both;
+}
+
+.container :nth-child(4) {
+  animation: move 2.5s linear infinite both;
+}
+
+.container :nth-child(5) {
+  animation: move 3s linear infinite both;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.circleOne {
+  background-color: white;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.circleTwo {
+  background-color: pink;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.circleThree {
+  background-color: green;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.circleFour {
+  background-color: orangered;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.circleFive {
+  background-color: purple;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+h3 {
+  margin: 10px;
+  color: black;
+}
